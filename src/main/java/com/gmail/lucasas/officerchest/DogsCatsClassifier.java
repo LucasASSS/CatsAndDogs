@@ -277,7 +277,6 @@ public class DogsCatsClassifier extends JFrame {
                 dataset
         );
 
-        // Gem chart
         try {
             File outFile = new File("lossPlot.png");
             ChartUtils.saveChartAsPNG(outFile, chart, 800, 600);
@@ -352,7 +351,6 @@ public class DogsCatsClassifier extends JFrame {
 
         buttonLoadImage.addActionListener(e -> onLoadImage());
 
-        // Drag & drop: Gør imageLabel klar til at modtage droppede filer
         new DropTarget(imageLabel, new DropTargetListener() {
             @Override public void dragEnter(DropTargetDragEvent dtde) { }
             @Override public void dragOver(DropTargetDragEvent dtde) { }
